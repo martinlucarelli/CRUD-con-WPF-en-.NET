@@ -1,0 +1,29 @@
+﻿<Window x:Class="Practica_BBDD.cargaHorariaModificada"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practica_BBDD"
+        mc:Ignorable="d"
+        Title="cargaHorariaModificada" Height="250" Width="300">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Content="Id de la materia a modificar" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="174" Height="24"/>
+        <TextBox Name="textBoxId" HorizontalAlignment="Center" Margin="0,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="128"/>
+
+        <Label Content="Nueva cantidad de horas" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="146" Height="24" Grid.Row="1"/>
+        <TextBox Name="textBoxNuevasHoras" HorizontalAlignment="Center" Margin="0,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="128" Grid.Row="1"/>
+
+        <Button Name="aceptar" Content="Acepatar" HorizontalAlignment="Left" Margin="40,0,0,0" Grid.Row="2" VerticalAlignment="Center" Width="56" Click="aceptar_Click" />
+        <Button Name="cancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="193,0,0,0" Grid.Row="2" VerticalAlignment="Center" Width="56" Click="cancelar_Click" />
+
+
+
+    </Grid>
+</Window>

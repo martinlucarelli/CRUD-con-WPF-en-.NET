@@ -1,0 +1,33 @@
+F:\Desktop\Curso C#\Practica BBDD\bin\Debug\Practica BBDD.exe.config
+F:\Desktop\Curso C#\Practica BBDD\bin\Debug\Practica BBDD.exe
+F:\Desktop\Curso C#\Practica BBDD\bin\Debug\Practica BBDD.pdb
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\Practica BBDD.csproj.AssemblyReference.cache
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\MainWindow.g.cs
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\App.g.cs
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\Practica BBDD_MarkupCompile.cache
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\Practica BBDD_MarkupCompile.lref
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\MainWindow.baml
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\Practica BBDD.g.resources
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\Practica_BBDD.Properties.Resources.resources
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\Practica BBDD.csproj.GenerateResource.cache
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\Practica BBDD.csproj.CoreCompileInputs.cache
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\Practica BBDD.exe
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\Practica BBDD.pdb
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\nuevoAlumno.g.cs
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\nuevoAlumno.baml
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\eliminarAlumno.g.cs
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\eliminarAlumno.baml
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\nuevoProfesor.g.cs
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\nuevoProfesor.baml
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\eliminarProfesor.g.cs
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\eliminarProfesor.baml
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\nuevaMateria.g.cs
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\nuevaMateria.baml
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\eliminarMateria.g.cs
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\eliminarMateria.baml
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\modificarMateria.g.cs
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\modificarMateria.baml
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\materiaModificadaEnProfesor.g.cs
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\materiaModificadaEnProfesor.baml
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\cargaHorariaModificada.g.cs
+F:\Desktop\Curso C#\Practica BBDD\obj\Debug\cargaHorariaModificada.baml

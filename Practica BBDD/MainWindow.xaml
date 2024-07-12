@@ -1,0 +1,145 @@
+﻿<Window x:Class="Practica_BBDD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practica_BBDD"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="1000"
+        Activated="Window_Activated">
+
+    <Grid Cursor="">
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <Grid Name="GridTitulo" Grid.Row="0" Background="IndianRed">
+
+            <TextBlock Name="titulo" Text="Gestion Profesores y alumnos" HorizontalAlignment="Center"
+                       VerticalAlignment="Center" FontSize="35" Cursor="Hand"></TextBlock>
+        </Grid>
+
+        <Grid Grid.Row="1">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.40*"></ColumnDefinition>
+                <ColumnDefinition Width="0.30*"></ColumnDefinition>
+                <ColumnDefinition Width="0.30*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <ListBox Grid.Column="0" Margin="10,80,10,180" Name="listaAlumnos">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+
+
+                        <Grid Name="gridListBoxAlumnos" >
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                                <ColumnDefinition Width="3*"></ColumnDefinition>
+                                <ColumnDefinition Width="3*"></ColumnDefinition>
+                                <ColumnDefinition Width="2*"></ColumnDefinition>
+
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Grid.Column="0" Name="dniAlumno" Text="{Binding dni}" Margin="7"
+                                       TextAlignment="Left" HorizontalAlignment="Stretch" ></TextBlock>
+                            <TextBlock Grid.Column="1" Name="nombreyApellidoAlumno" Text="{Binding nombreyapellido}" Margin="7"
+                                       TextAlignment="Left" HorizontalAlignment="Stretch"></TextBlock>
+                            <TextBlock Grid.Column="2" Name="direccionAlumno" Text="{Binding direccion}" Margin="7"
+                                       TextAlignment="Left" HorizontalAlignment="Stretch"></TextBlock>
+                            <TextBlock Grid.Column="3" Name="telefonoAlumno" Text="{Binding telefono}" Margin="7"
+                                       TextAlignment="Left" HorizontalAlignment="Stretch"></TextBlock>
+
+                        </Grid>
+
+                    </DataTemplate>
+
+                </ListBox.ItemTemplate>
+
+
+
+
+            </ListBox>
+
+            <ListBox Grid.Column="1" Margin="40,80,40,180" Name="listaProfesores">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+
+
+                        <Grid Name="gridListBoxProfesores" >
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.40*"></ColumnDefinition>
+                                <ColumnDefinition Width="0.60*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Grid.Column="0" Name="dniAlumno" Text="{Binding dni}" Margin="7"
+                           TextAlignment="Left" HorizontalAlignment="Stretch"></TextBlock>
+                            <TextBlock Grid.Column="1" Name="nombreyApellidoAlumno" Text="{Binding nombreyapellido}" Margin="7"
+                           TextAlignment="Left" HorizontalAlignment="Stretch"></TextBlock>
+                        </Grid>
+
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+            <ListBox Grid.Column="2" Margin="10,80,10,180" Name="listaMaterias">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+
+
+                        <Grid Name="gridListBoxMaterias" >
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.3*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="0.1*"></ColumnDefinition>
+                                <ColumnDefinition Width="0.1*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Grid.Column="0" Text= "{Binding Id}" Margin="7"
+                                TextAlignment="Left" HorizontalAlignment="Stretch"></TextBlock>
+                            <TextBlock Grid.Column="1" Text="{Binding nombre}" Margin="7"
+                                 TextAlignment="Left" HorizontalAlignment="Stretch"></TextBlock>
+                            <TextBlock Grid.Column="2" Text="{Binding cargaHorariaSemanal}" Margin="7"
+                                TextAlignment="Left" HorizontalAlignment="Stretch"></TextBlock>
+                            <TextBlock Grid.Column="3" Text="{Binding anio}" Margin="7"
+                                TextAlignment="Left" HorizontalAlignment="Stretch"></TextBlock>
+                            <TextBlock Grid.Column="4" Text="{Binding profesor}" Margin="7"
+                                  TextAlignment="Left" HorizontalAlignment="Stretch"></TextBlock>
+                        </Grid>
+
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Label Content="ALUMNOS" FontSize="20" HorizontalAlignment="Center" Margin="0,37,0,0" VerticalAlignment="Top"/>
+            <Label Grid.Column="1" Content="PROFESORES" FontSize="20" HorizontalAlignment="Center" Margin="0,37,0,0" VerticalAlignment="Top"/>
+            <Label Grid.Column="2" Content="MATERIAS" FontSize="20" HorizontalAlignment="Center" Margin="0,37,0,0" VerticalAlignment="Top"/>
+            <!--Botones agregar-->
+            <Button Name="agregarAlumno"  Content="Agregar alumno" HorizontalAlignment="Left" Margin="34,461,0,0" VerticalAlignment="Top" Height="27" Width="96" Click="agregarAlumno_Click"/>
+            <Button Name="agregarMateria" Content="Agregar materia" HorizontalAlignment="Left" Margin="27,456,0,0" VerticalAlignment="Top" Height="27" Width="96" Grid.Column="2" Click="agregarMateria_Click"/>
+            <Button Name="agregarProfesor" Content="Agregar profesor" HorizontalAlignment="Left" Margin="40,461,0,0" VerticalAlignment="Top" Height="27" Width="96" Grid.Column="1" Click="agregarProfesor_Click"/>
+            <!--Botones eliminar-->
+            <Button Name="borrarAlumno"  Content="Borrar alumno" HorizontalAlignment="Left" Margin="34,510,0,0" VerticalAlignment="Top" Height="28" Width="96" Click="borrarAlumno_Click" RenderTransformOrigin="-0.943,0.779"/>
+            <Button Name="borrarProfesor" Content="Borrar profesor" HorizontalAlignment="Left" Margin="40,506,0,0" VerticalAlignment="Top" Height="27" Width="96" Grid.Column="1" Click="borrarProfesor_Click"/>
+            <Button Name="borrarMateria" Content="Borrar materia" HorizontalAlignment="Left" Margin="27,501,0,0" VerticalAlignment="Top" Height="27" Width="96" Grid.Column="2" Click="borrarMateria_Click"/>
+            <!--Botones eliminar-->
+            <Button Name="modificarMateria" Content="Modificar materia " HorizontalAlignment="Left" Margin="27,548,0,0" VerticalAlignment="Top" Height="27" Width="110" Grid.Column="2" Click="modificarMateria_Click"/>
+
+
+        </Grid>
+
+
+
+
+
+
+    </Grid>
+</Window>

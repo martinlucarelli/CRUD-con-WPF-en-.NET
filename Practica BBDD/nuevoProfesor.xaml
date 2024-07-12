@@ -1,0 +1,34 @@
+﻿<Window x:Class="Practica_BBDD.nuevoProfesor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practica_BBDD"
+        mc:Ignorable="d"
+        Title="nuevoProfesor" Height="250" Width="400">
+    <Grid>
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+
+
+        </Grid.RowDefinitions>
+        <Label Content="DNI:" HorizontalAlignment="Left" Margin="32,9,0,0" VerticalAlignment="Top"/>
+        <Label Content="NOMBRE:" HorizontalAlignment="Left" Margin="32,0,0,0" VerticalAlignment="Center" Grid.Row="1"/>
+        <Label Content="APELLIDO:" HorizontalAlignment="Left" Margin="32,0,0,0" VerticalAlignment="Center" Grid.Row="2"/>
+        <TextBox Name="TexBoxDni"  HorizontalAlignment="Left" Margin="166,11,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="171" Height="21"/>
+        <TextBox Name="TexBoxNombre" HorizontalAlignment="Left" Margin="166,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="171" Height="21" Grid.Row="1"/>
+        <TextBox Name="TexBoxApellido" HorizontalAlignment="Left" Margin="166,16,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="171" Height="21" Grid.Row="2"/>
+
+
+
+        <Button Name="aceptar" Content="Aceptar" HorizontalAlignment="Left" Margin="101,0,0,0" Grid.Row="3" VerticalAlignment="Center" Click="aceptar_Click"/>
+        <Button Name="cancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="243,0,0,0" Grid.Row="3" VerticalAlignment="Center" Click="cancelar_Click" />
+
+
+    </Grid>
+</Window>
